@@ -1,0 +1,37 @@
+//
+//  YZSelectCalendarPrefixHeader.pch
+//  YZSelectCalendarDemo
+//
+//  Created by Q房通 on 2017/11/29.
+//  Copyright © 2017年 Q房通. All rights reserved.
+//
+
+#ifndef YZSelectCalendarPrefixHeader_pch
+#define YZSelectCalendarPrefixHeader_pch
+
+
+#import "Masonry.h"
+
+
+#import "MJExtension.h"
+
+//MARK:--------------屏幕比例相关以及缩放系数--------------
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#import "NSDateTool.h"
+
+#import "YZCalendarModel.h"
+
+#import "NSDate+Utilities.h"
+
+//MARK:--Block self
+#define WeakSelf    __weak typeof(self) weakSelf = self;
+#define StrongSelf  __strong typeof(weakSelf) strongSelf = weakSelf;
+
+#define HSColor(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* YZSelectCalendarPrefixHeader_pch */
